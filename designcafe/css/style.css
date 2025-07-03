@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* header */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.7%;
+    /* 53/1920 */
+    padding-right: 7.6%;
+    /* 145/1920 */
+    position: absolute;
+    width: 100%;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 70px;
+
+}
+
+.header_nav a {
+    color: #fff;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.logo {
+    width: 226px;
+}
+
+.body {
+    background-color: #e8d9bf;
+}
+
+
