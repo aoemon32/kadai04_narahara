@@ -350,35 +350,3 @@ footer {
   right: 20px;
 }
 
-@media (max-width: 375px) {
-    .footer-wrapper {
-        padding: 10px 0; 
-    }
-
-    .site-footer {
-        padding: 0 10px; 
-    }
-
-    .design-cafe-text {
-        font-size: 1.8em; 
-    }
-
-    .footer-right-info {
-        font-size: 0.85em; 
-        line-height: 1.6; 
-    }
-
-    .copyright-inline {
-        font-size: 0.75em; 
-    }
-    
-    .main-footer-layout {
-        gap: 15px; 
-    }
-}
-
-@media screen and (min-width: 481px) {
-}
-@media screen and (min-width: 960px) {
-	/* 960px以上に適用されるCSS（PC用） */
-}
