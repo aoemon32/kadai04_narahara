@@ -62,11 +62,15 @@ body {
 
 /* ABOUT US　イメージは後でやる */
 
+.about_us_wrap {
+  padding-bottom: 67px;
+}
+
 .aboutus_logo {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .aboutus_logo img {
@@ -122,7 +126,7 @@ body {
   align-items: center; 
   text-align: left; 
   width: 100%; 
-  padding: 0 10px 67px 80px;
+  padding: 0 10px 0 80px;
 }
 
 /* MENU */
@@ -375,7 +379,7 @@ footer {
 }
 
 /* レスポンシブ */
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
 
 .menu_detail {
     display: flex;
@@ -409,4 +413,92 @@ footer {
   }
 
 }
+
+.hamburger,
+.header_nav-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#fff;
+    top: 14px;
+    right: 0;
+    transition: 0.3s;
+  }
+  .hamburger span::before {
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#fff;
+    top: -14px;
+    right: 0;
+    transition: 0.3s;
+  }
+
+  .hamburger span::after {
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#fff;
+    bottom: -14px;
+    right: 0;
+    transition: 0.3s;
+  }
+  .open span {
+    background-color: transparent;
+  }
+  .open span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+   .open span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .header_nav {
+    display: none;
+  }
+
+  .header_nav-sp{
+    position: absolute;
+    height: 100vh; /*画面一杯一杯という意味*/
+    width: 100%;
+    background-color: #000000b1;
+    top: 0;
+    left: 0;
+  }
+  .header_nav-sp a{
+    color:#fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 20px;
+  }
+
+  .header_nav-sp ul {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+  }
+}
+
 
