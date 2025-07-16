@@ -60,7 +60,7 @@ body {
     padding-bottom: 100px;
 }
 
-/* ABOUT US　イメージは後でやる */
+/* ABOUT US */
 
 .about_us_wrap {
   padding-bottom: 67px;
@@ -380,12 +380,54 @@ footer {
 
 /* レスポンシブ */
 @media screen and (max-width:767px) {
+/* メインビジュアル */
+.sub_eigo {
+  font-size:17px ;
+  padding-top: 42px;
+}
 
+.sub_title {
+    font-size: 38px;
+    padding-top: 28px;
+}
+
+.sub_japanese {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.65em;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+  /* ABOUT US */
+
+    .aboutus_logo {
+    flex-direction: column; 
+  }
+
+  .aboutus_logo img {
+  width: 100%;
+  border-bottom-right-radius: 0; 
+  overflow: hidden; 
+}
+
+.aboutus_ds {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.6;
+  padding-left: 0;
+  margin: 0;
+  display: block;
+  }
+
+
+  /* メニュー */
 .menu_detail {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    padding: 0; 
+    width: 80%;
 }
 
   .menu_detail li {
@@ -407,10 +449,134 @@ footer {
   .drink_menu img,
   .food_menu img,
   .sweets_menu img {
-    max-width: 100%; 
     height: auto; 
     margin-bottom: 10px; 
   }
+  .drink_menu p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.6;
+  padding: 0 50px;
+}
+
+.food_menu p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.6;
+
+}
+
+.sweets_menu p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.drink_menu h3 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #d30202;
+  text-align: left;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.food_menu h3 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #d30202;
+  text-align: left;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.sweets_menu h3 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #d30202;
+  text-align: left;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+/* GALLERY */
+
+ .gallery {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .gallery_scroll_wrap {
+    display: flex;
+    width: calc(300px * 10); /* 画像5枚×2セットでループ */
+    animation: scroll 20s linear infinite;
+  }
+
+  .gallery_scroll_wrap img {
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1500px); } /* 300px * 5枚分 */
+  }
+
+  /* EVENT */
+
+   .event_detail a {
+    white-space: nowrap;       /* 改行させない */
+    overflow: hidden;          /* はみ出た部分を隠す */
+    text-overflow: ellipsis;   /* …で省略表示 */
+    font-size: 16px;
+    flex-direction: column;
+  }
+
+  .event_detail span {
+    font-size: 16px;
+  }
+
+  .event_box {
+    width:90%
+  }
+
+  /* ACCESS */
+
+  /* フッター */
+
+  .site_footer {
+    padding: 0;
+    padding-left: 20px; 
+    display: block; 
+    align-items: left; 
+    flex-wrap: wrap; 
+    gap: 80px; 
+    text-align: left; 
+   }
+
+  .footer_logo  {
+    text-align: left; /* ロゴ画像を左寄せにする */
+    margin-bottom: 20px; /* ロゴと次の要素の間に余白 */
+    padding-left: 0; /* 必要に応じて調整 */
+  }
+
+  .footer_logo img {
+    display: block; /* 画像がインライン要素になるのを防ぐ */
+    max-width: 250px; /* ロゴの最大幅を調整（画像サイズによる） */
+    height: auto;
+  }
+   
 
 }
 
@@ -418,7 +584,7 @@ footer {
 .header_nav-sp {
   display: none;
 }
-
+/* ハンバーガーメニュー */
 @media screen and (max-width: 1100px) {
   .hamburger {
     display: block;
@@ -500,5 +666,4 @@ footer {
     gap:20px
   }
 }
-
 
