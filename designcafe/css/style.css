@@ -477,7 +477,7 @@ footer {
   }
 
   .aboutus_ds {
-    font-size: 36px;
+    font-size: 30px;
   }
 
 }
@@ -531,8 +531,6 @@ footer {
 }
 
 .aboutus_ds {
-  font-weight: normal;
-  text-align: left;
   line-height: 1.6;
   padding-left: 10px;
   margin: 0;
