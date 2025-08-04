@@ -43,6 +43,22 @@ body {
   padding: 0 10px;
 }
 
+.slick-dots {
+    bottom: 0;
+  }
+
+  .slick-dots li button:before {
+    color: #fff;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #fff;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
 /* メインビジュアル下 */
 
 .sub_sentence {
@@ -730,19 +746,5 @@ footer {
   }
 
 }
-.slick-dots {
-    bottom: 0;
-  }
 
-  .slick-dots li button:before {
-    color: #fff;
-  }
-
-  .slick-dots li.slick-active button:before {
-    color: #fff;
-  }
-
-  .slick-dotted.slick-slider {
-    margin-bottom: 0;
-  }
 
