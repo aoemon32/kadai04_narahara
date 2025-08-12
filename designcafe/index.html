@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -132,13 +133,20 @@
             </h2>
             <div class="gallery">
                 <div class="gallery_scroll_wrap">
-                    <img src="./images/pc_gallary_01-100.jpg" alt="カフェ店内のイメージ" />
-                    <img src="./images/pc_gallary_01-100.jpg" alt="カフェ店内のイメージ" />
-                    <img src="./images/pc_gallary_02-100.jpg" alt="コーヒー豆" />
-                    <img src="./images/pc_gallary_03-100.jpg" alt="カフェ店内のイメージ2" />
-                    <img src="./images/pc_gallary_04-100.jpg" alt="カフェ店内のロゴが映された写真" />
-                    <img src="./images/pc_gallary_05-100.jpg" alt="ラテアートしている様子" />
+                    <a href="./images/pc_gallary_01-100.jpg" data-lightbox="image-1" data-title="ラテアートイメージ"> <img
+                            src="./images/pc_gallary_01-100.jpg" alt="ラテアートイメージ" /></a>
+                    <a href="./images/pc_gallary_01-100.jpg" data-lightbox="image-2" data-title="ラテアートイメージ"> <img
+                            src="./images/pc_gallary_01-100.jpg" alt="ラテアートイメージ" /></a>
+                    <a href="./images/pc_gallary_02-100.jpg" data-lightbox="image-3" data-title="カフェ店内のイメージ1"> <img
+                            src="./images/pc_gallary_02-100.jpg" alt="カフェ店内のイメージ1" /></a>
+                    <a href="./images/pc_gallary_03-100.jpg" data-lightbox="image-4" data-title="カフェ店内のイメージ2"> <img
+                            src="./images/pc_gallary_03-100.jpg" alt="カフェ店内のイメージ2" /></a>
+                    <a href="./images/pc_gallary_04-100.jpg" data-lightbox="image-5" data-title="コーヒー豆"> <img
+                            src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆" /></a>
+                    <a href="./images/pc_gallary_05-100.jpg" data-lightbox="image-6" data-title="ラテアートしている様子"> <img
+                            src="./images/pc_gallary_05-100.jpg" alt="ラテアートしている様子" /></a>
                 </div>
+            </div>
         </section>
 
         <!-- EVENT -->
@@ -198,6 +206,7 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
             </script>
+            <script src="path/to/lightbox.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script>
                 $(function () {
@@ -230,6 +239,14 @@
                         }]
 
                     });
+
+
+                })
+            </script>
+            <script>
+                lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true,
                 })
             </script>
 
